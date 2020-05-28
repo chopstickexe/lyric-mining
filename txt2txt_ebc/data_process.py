@@ -22,6 +22,7 @@ def __read(path: str) -> Tuple[List[str], List[str], List[str]]:
                 singer = re.sub(r'歌手　|アーティスト　', '', line)
             elif i > 4:
                 line = re.sub(r'【.+】', '', line)  # 歌割を消す
+                line = line.replace('\u3000', '')  # 全角スペースを消す 
                 titles.append(title)
                 singers.append(singer)
                 lines.append(line)
