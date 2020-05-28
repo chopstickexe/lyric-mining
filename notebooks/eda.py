@@ -1,7 +1,7 @@
 # %%
 # Exploratory data analysis using VSCode interactive Python window
 from txt2txt_ebc import data_process
-df = data_process.to_df("../data/raw/*.txt")
+df = data_process.to_df("../data/raw/ebc/*.txt")
 df.shape
 
 # %%

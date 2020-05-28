@@ -140,4 +140,6 @@ cython_debug/
 # Project specific
 .vscode
 data/raw/*.txt
+data/raw/ebc/*.txt
 notebooks/*.csv
+notebooks/checkpoint_pt
