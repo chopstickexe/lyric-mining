@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "txt2txt-ebc"
+version = "0.1.0"
+description = ""
+authors = ["Risa Nishiyama <lisa.nishiyama@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pandas = "^1.0.3"
+wordcloud = "^1.7.0"
+janome = "^0.3.10"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = {version = "^19.10b0", allow-prereleases = true}
+flake8 = "^3.8.2"
+
+[tool.poetry.scripts]
+data-process = "txt2txt_ebc.data_process:main"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
